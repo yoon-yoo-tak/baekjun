@@ -6,13 +6,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class bulk { // 7568번
+public class bulk { // 7568번   
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int N = Integer.parseInt(br.readLine());
-        ArrayList<Integer> weight_list = new ArrayList<>();
-        ArrayList<Integer> height_list = new ArrayList<>();
+        ArrayList<Integer> weight_list = new ArrayList<>(); // 몸무게 정보 담을 리스트
+        ArrayList<Integer> height_list = new ArrayList<>(); // 키 정보 담을 리스트
         for (int i = 0 ; i<N; i++){
             st = new StringTokenizer(br.readLine()," ");
             int weight = Integer.parseInt(st.nextToken());
